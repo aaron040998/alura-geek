@@ -1,0 +1,218 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenido llene toda la altura */
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Topbar */
+  .topbar {
+    background-color: #5c2d91;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topbar h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffff;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Sección de productos */
+  .product-section {
+    flex: 2;
+  }
+  
+  .product-section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #searchBar {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Grid de ítems */
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-height: 500px; /* Altura máxima del contenedor */
+    overflow-y: auto;
+    padding-right: 10px; /* Evita solapamiento con la barra de scroll */
+    align-items: start; /* Asegura que todas las tarjetas se alineen correctamente */
+  }
+  
+  /* Tarjetas de productos */
+  .item-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px; /* Altura mínima fija */
+    max-height: 250px; /* Altura máxima para uniformidad */
+  }
+  
+  .item-card img {
+    width: 100%; /* Ocupa el ancho del contenedor */
+    height: auto; /* Conserva las proporciones */
+    max-height: 150px; /* Limita la altura máxima */
+    border-radius: 4px;
+    object-fit: cover; /* Evita estiramientos */
+    object-position: center; /* Centra la imagen dentro del espacio */
+  }
+  
+  .item-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+  
+  .item-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .item-card button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Sección de formulario */
+  .form-section {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  form button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"] {
+    background: #007bff;
+    color: white;
+  }
+  
+  form button#clearForm {
+    background: #ddd;
+    color: #333;
+  }
+  
+  /* Scroll personalizable */
+  .items-grid::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .items-grid::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
+  }
+  
+  .items-grid::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+  /* Footer */
+.footer {
+    background-color: #5c2d91; /* Color similar al de la imagen */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Courier New', Courier, monospace; /* Estilo pixelado */
+  }
+  
+  .footer h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .footer strong {
+    color: #ff5959; /* Color rojo para destacar "Darkas" */
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

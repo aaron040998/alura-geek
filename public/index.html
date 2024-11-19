@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Ítems</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <h1>❤️❤️❤️ AluraGeek</h1>
+  </div>
+
+  <div class="container">
+    <!-- Sección de productos -->
+    <section class="product-section">
+      <h2>MIS PRODUCTOS:</h2>
+      <input type="text" id="searchBar" placeholder="Buscar producto..." />
+      <!-- Contenedor con scroll -->
+      <div id="itemsGrid" class="items-container items-grid"></div>
+    </section>
+
+    <!-- Sección para agregar productos -->
+    <section class="form-section">
+      <h2>AGREGAR PRODUCTO:</h2>
+      <form id="itemForm">
+        <input type="text" id="nombre" placeholder="nombre..." required>
+        <input type="number" id="precio" placeholder="precio..." required>
+        <input type="url" id="urlImagen" placeholder="imagen..." required>
+        <button type="submit">Enviar</button>
+        <button type="button" id="clearForm">Limpiar</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h1>❤️❤️❤️ AluraGeek</h1>
+      <p>Desarrollado por <strong>Darkas</strong></p>
+      <p>Alura Latam - 2024</p>
+    </div>
+  </footer>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
